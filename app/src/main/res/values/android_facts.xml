@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="android_facts_array">
+        <item>Android yaratuvchisi Endi Rubin.</item>
+        <item>Android Inc. kompaniyasi Android operatsion tizimini ishlab chiqdi va Google uni 2005 yilda sotib oldi, uning katta miqdori 50 million dollar.</item>
+        <item>Google’dan oldin Samsung’ga Android Inc’ni sotib olish taklifi berilgan edi, biroq ular Android’ni qiziqtirmaydi va taklifni rad etishadi.</item>
+        <item>Dastlab, Android raqamli kameralar uchun operatsion tizim sifatida ishlab chiqilgan, ammo keyinchalik u aqlli telefonlarga qaratilgan.</item>
+        <item>Android Java, C, C++, XML, Assembly tili, Python, Shell skripti, Go, Make, D kabi ko\'plab tillarda yozilgan.</item>
+        <item>HTC Dream yoki T-Mobile G1 Android operatsion tizimida ishlaydigan birinchi smartfon edi.</item>
+        <item>HTC Dream yoki T-Mobile G1 2008-yilda naushnik uyasisiz sotuvga chiqarilgan va adapter kerak edi.</item>
+        <item>Android smartfonlar bozorining 88 foizini, IOS esa 11 foizni egallaydi.</item>
+        <item>Hozirda 2 milliarddan ortiq aqlli qurilmalar operatsion tizim sifatida Google Android OS dan foydalanadi.</item>
+        <item>Android so\'zi erkak robotga ishora qiladi, ayol robot esa "Gynoid" deb nomlanadi.</item>
+        <item>Android ochiq kodli dasturiy ta\'minot, ya\'ni uning manba kodi bepul mavjud. Har kim manba kodini o\'zgartirishi va yangi va noyob xususiyatlarni qo\'shishi mumkin.</item>
+        <item>Androidning Google Store do‘konida 48 milliarddan ortiq ilovalar o‘rnatilgan va ularning aksariyati bepul.</item>
+        <item>NASA bir vaqtlar Nexus S telefonlaridan (Android Gingerbread asosidagi qurilma) suzuvchi kosmik robotlarida foydalangan.</item>
+        <item>Android qurilmalarining sotuvi Microsoft Windows, iOS va Mac OS qurilmalarining umumiy sotilishiga qaraganda ko\'proq.</item>
+        <item>Microsoft Android qurilmalarini sotishdan har yili taxminan 2 milliard dollar patent royalti oladi.</item>
+        <item>Hatto Google Xaritalar ham yo\'llardagi tirbandlikni hisoblash uchun Android mobil telefonlarining tezligidan foydalanadi.</item>
+        <item>Android 4.4 versiyasi uchun "Kit-Kat" nomidan foydalanish uchun Google Nestle bilan shartnoma tuzishi kerak edi.</item>
+    </string-array>
+</resources>

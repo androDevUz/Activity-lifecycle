@@ -10,17 +10,23 @@ import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import uz.abubakir_khakimov.activity_lifecycle.databinding.ActivityMainBinding
+import kotlin.random.Random.Default.nextInt
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val cameraPermission =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) {}
+    private lateinit var currentAndroidFact: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        currentAndroidFact = savedInstanceState?.getString(ANDROID_FACT_KEY) ?: getRandomFact()
+
+        updateUI()
 
         binding.openSecondActivity.setOnClickListener {
             startActivity(
@@ -38,6 +44,16 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("testLifecycle", "MainActivity_onCreate()")
     }
+
+    private fun updateUI(){
+        binding.androidFacts.text = currentAndroidFact
+    }
+
+    private fun getRandomFact(): String = resources
+        .getStringArray(R.array.android_facts_array).let {
+            val randomIndex = nextInt(it.size)
+            it[randomIndex]
+        }
 
     override fun onStart() {
         super.onStart()
@@ -78,6 +94,8 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
 
+        outState.putString(ANDROID_FACT_KEY, currentAndroidFact)
+
         Log.d("testLifecycle", "MainActivity_onSaveInstanceState()")
     }
 
@@ -88,5 +106,10 @@ class MainActivity : AppCompatActivity() {
         customDialogBuilder.setPositiveButton("Obuna bo'ldim") { dialog: DialogInterface, which: Int -> }
         customDialogBuilder.setNegativeButton("Xoziroq obuna bo'laman") { dialog: DialogInterface, which: Int -> }
         customDialogBuilder.create().show()
+    }
+
+    companion object{
+
+        const val ANDROID_FACT_KEY = "android_fact_key"
     }
 }

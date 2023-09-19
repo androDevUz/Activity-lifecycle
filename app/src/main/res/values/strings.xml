@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">AndroDevUz activity lifecycle</string>
+    <string name="app_name">Activity lifecycle</string>
     <string name="title_activity_second">Ikkinchi activity</string>
 </resources>
